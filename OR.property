@@ -1,0 +1,112 @@
+#Login Alternate Path
+HOVER=spnMyAcc:=ID
+MY_BOOKING=My Booking:=LINKTEXT
+E_EMAIL=loginid:=ID
+PASSWORD=//*[@id="password"]:=XPATH
+SIGN_IN_BUTTON=Sign In:=VALUE
+
+#Login Basic Path
+HOVER1=spnMyAcc:=ID
+SIGN_IN=//a[@class='btn_signin']:=XPATH
+EMAIL_BASIC=//*[@id="txtusername"]:=XPATH
+PASSWORD_BASIC=//*[@id="Password1"]:=XPATH
+LOGIN=//*[@id="divLogin"]/div[1]/div[2]/div/div[9]/input:=XPATH
+
+#Register Basic Path
+E_Login=//*[@id="myTopnav"]/div[2]/div[2]/div[2]/i:=XPATH
+REGISTER=Register:=LINKTEXT
+EMAIL_MOBILE=//*[@id="txtEmail"]:=XPATH
+REGISTERBUTTON=//*[@id="hid1"]/div[1]/div[2]/div[1]/div[7]/input:=XPATH
+OTP=//*[@id="otptxt"]:=XPATH
+PASS=pass:=ID
+CONPASS=confirmpass:=ID
+SUBMIT=/html/body/form/div[5]/div[1]/div[2]/div[2]/div[5]/input:=XPATH
+
+#Register Alternate Path
+E_Login=//*[@id="myTopnav"]/div[2]/div[2]/div[2]/i:=XPATH
+MY_BOOKING=My Booking:=LINKTEXT
+REGISTER_LINK=or Register:=LINKTEXT
+EMAILMOBILEALTERNATE=//*[@id="txtEmail"]:=XPATH
+
+
+#Hotel search
+
+TAB=//*[@id=\"myTopnav\"]/div[1]/ul/li[2]/a:=xpath
+CITY=//input[@id='txtCity']:=xpath
+INDATE=//*[@id='txtCheckInDate']:=xpath
+OUTDATE=//*[@id='txtCheckOutDate']:=xpath
+COUNT=//*[@class='noOfgust']:=xpath
+INCREASE=//*[@id='Children_room_1_1_plus']:=xpath
+DONE=//*[@id='exithotelroom']:=xpath
+SEARCH=//input[@id='btnDiv']:=xpath
+
+HTL=//*[@id='ddlPriceSorting']:=xpath
+SPA=//*[@id='divSliderleftPanel']/div/div[15]/label[1]/span:=xpath
+BOOK=//*[@id='hotelListDiv']/div/div/div[3]/a/div[2]/div[3]/span[2]/span/div:=xpath
+
+ROOM=//*[@id='myDescForm']/div[4]/div[3]/div[2]/div/a:=xpath
+BOOKROOM=//*[@id='jump']/div[4]/div/div[2]/div/div[2]/div/div[2]/div[5]/div[1]:=xpath
+
+TITLE1=//*[@id='ddlGender1']:=xpath
+MR1=//*[@id='ddlGender1']/option[1]:=xpath
+NAME1=//*[@id=txtFirstName1]:=xpath
+LNAME1=//*[@id='txtLastName1']:=xpath
+TITLE2=//*[@id='ddlGender2']:=xpath
+MRS2=//*[@id="ddlGender2"]/option[2]:=xpath
+NAME2=//*[@id="txtFirstName2"]:=xpath
+LNAME2=//*[@id="txtLastName2"]:=xpath
+TITLE3=//*[@id="ddlChildGender"]:=xpath
+MISS3=//*[@id="ddlChildGender"]/option[3]:=xpath
+NAME3=//*[@id="txtFirstNameChild1"]:=xpath
+LNAME3=//*[@id="txtLastNameChild1"]:=xpath
+EMAIL=//*[@id="txtEmailId"]:=xpath
+MO_NOP=//*[@id="DivTravellerDetails"]/div[3]/div[2]/div/span/select:=xpath
+NOP1=//*[@id="DivTravellerDetails"]/div[3]/div[2]/div/span/select/option[1]:=xpath
+NUMBER=//*[@id="txtCPhone"]:=xpath
+CHECK=//*[@id="chkAgree1"]:=xpath
+PAYMENT=//*[@id="btnTravellerContinue"]/div:=xpath
+
+
+#searchRoundFactory Object Property
+S_SOURCE=FromSector_show:=ID
+S_DESTINATION=Editbox13_show:=ID
+S_DATE=ddate:=ID
+S_RDATE=rdate:=ID
+S_TRAVELLER=//div[@class='mobile-wi1 flig-show1']//span[@class='drpNoTrv'][contains(text(),'1 Traveller(s)')]:=XPATH
+S_ADULT=//div[@class='mobile-wi1 flig-show1']//div[@class='innr_pnl']//div[1]//div[2]//div[1]//div[1]//input[1]:=XPATH
+S_CHILD= //div[@class='mobile-wi1 flig-show1']//div[@class='innr_pnl']//div[2]//div[2]//div[1]//div[3]//input[1]:=XPATH
+S_INFANT=//div[@class='mobile-wi1 flig-show1']//div[@class='innr_pnl']//div[3]//div[2]//div[1]//div[3]//input[1]:=XPATH
+S_CLASS=//span[@class='optclass-name']:=XPATH
+S_DONE=//div[@id='myDropdown_n']//a[@class='dn_btn'][contains(text(),'Done')]:=XPATH
+S_SEARCH=//div[@class='mobile-wi1 flig-show1']//input[@value='Search']:=XPATH
+
+#bookRoundFactory Object Property
+B_AIRLINE=//div[@class='filt-arr1']:=XPATH
+B_AIRWAYS=//input[@id='GoAir']:=XPATH
+B_DEPART=//label[@for='out0']:=XPATH
+B_RETURN=//label[@for='in0']:=XPATH
+B_BOOKNOW=//div[@id='BtnBookNow']:=XPATH
+B_EMAIL=//div[@class='con-m']//input[@id='txtEmailId']:=XPATH
+B_CONTINUEBOOKING=//*[@id="divTrvfltDtl"]/div[2]/div[1]/form/div[3]/span:=XPATH
+
+#travellerDetails Object Property
+T_TITLE1=//select[@id='titleAdult0']:=XPATH
+T_MISS1=//option[@value='Ms']:=XPATH
+T_TRAVELLER1FNAME=//input[@id='txtFNAdult0']:=XPATH
+T_TRAVELLER1LNAME=//input[@id='txtLNAdult0']:=XPATH
+T_TITLE2=//select[@id='titleChild0']:=XPATH
+T_MISS2=//select[@id='titleChild0']//option[@value='Miss'][contains(text(),'Miss')]:=XPATH
+T_TRAVELLER2FNAME=//input[@id='txtFNChild0']:=XPATH
+T_TRAVELLER2LNAME=//input[@id='txtLNChild0']:=XPATH
+T_TITLE3=//select[@id='titleInfant0']:=XPATH
+T_MISS3=//select[@id='titleInfant0']//option[@value='Miss'][contains(text(),'Miss')]:=XPATH
+T_TRAVELLER3FNAME=//input[@id='txtFNInfant0']:=XPATH
+T_TRAVELLER3LNAME=//input[@id='txtLNInfant0']:=XPATH
+T_NUMBER=7247368398
+T_DAY=//select[@id='divDOBDayInfant0']:=XPATH
+T_DAYY=//select[@id='divDOBDayInfant0']//option[@value='02'][contains(text(),'2')]:=XPATH
+T_MON=//select[@id='divDOBMonInfant0']:=XPATH
+T_MONTH=//option[contains(text(),'Jun')]:=XPATH
+T_YR=//select[@id='divDOBYarInfant0']:=XPATH
+T_YEAR=//select[@id='divDOBYarInfant0']//option[@value='2018'][contains(text(),'2018')]:=XPATH
+T_BOOKING=//div/span[@class='co1']:=XPATH
